@@ -4,6 +4,8 @@
 public class ConstToken {
 
     private String constTokenName ;
+
+
     public double function(double value){
         if (constTokenName=="SIN"){
             return Math.sin(value);
@@ -27,6 +29,10 @@ public class ConstToken {
     public ConstToken(String constTokenName,double value){
         this.constTokenName = constTokenName;
         this.value = value;
+    }
+
+    public String getConstTokenName(){
+        return constTokenName;
     }
 
     public double getValue() {
